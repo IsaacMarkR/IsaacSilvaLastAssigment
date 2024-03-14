@@ -1,6 +1,6 @@
 # Navegabilidad de la Aplicación By Isaac Silva
 
-La aplicación cuenta con una estructura de navegación que permite a los usuarios moverse a través de diferentes vistas, incluyendo la página de inicio, categorías de productos u ofertas y detalles de ítems específicos. A continuación, se describirá la navegabilidad y las rutas definidas en la aplicación:
+La aplicación cuenta con una estructura de navegación que permite a los usuarios moverse a través de diferentes vistas, incluyendo la página de inicio, categorías de productos u ofertas, detalles de ítems específicos, y una visión general del carrito de compras. A continuación, se describirá la navegabilidad y las rutas definidas en la aplicación:
 
 ## Página de Inicio
 
@@ -19,8 +19,8 @@ Esta vista muestra los ítems según la categoría seleccionada por el usuario, 
     - `categoryId` puede ser "productos" para productos o "ofertas" para ofertas especiales.
 - **Componente**: `ItemListContainer`
 
-![Categorías de Productos](/public/Screenshot%202024-02-24%20at%2012.09.13 AM.png)
-![Categorías de Ofertas](/public/Screenshot%202024-02-24%20at%2012.09.18 AM.png)
+![Categorías de Productos](/src/assets/Screenshot%202024-03-13%20at%2011.31.46 PM.png)
+![Categorías de Ofertas](/src/assets/Screenshot%202024-03-13%20at%2011.39.42 PM.png)
 
 ## Detalles del Ítem
 
@@ -30,13 +30,22 @@ La vista de detalles del ítem muestra información más detallada sobre un prod
     - `itemId` es el identificador único del producto u oferta.
 - **Componente**: `ItemDetail`
 
-![Detalles del Ítem](/public/Screenshot%202024-02-24%20at%2012.09.24 AM.png)
+![Detalles del Ítem](/src/assets/Screenshot%202024-03-13%20at%2011.32.08 PM.png)
+
+## Resumen del Carrito
+
+La página de resumen del carrito muestra una lista de todos los ítems que el usuario ha añadido al carrito, permitiendo la modificación de cantidades o la eliminación de ítems.
+
+- **Ruta**: `/cart`
+- **Componente**: `CartResume`
+
+![Resumen del Carrito](/src/assets/Screenshot%202024-03-13%20at%2011.32.23 PM.png)
 
 ## Componentes Adicionales
 
 ### Navbar
 
-El `Navbar` proporciona enlaces rápidos a las principales secciones de la aplicación, facilitando la navegación entre la página de inicio, productos, ofertas y otras áreas importantes.
+El `Navbar` proporciona enlaces rápidos a las principales secciones de la aplicación, facilitando la navegación entre la página de inicio, productos, ofertas, y la página del carrito de compras.
 
 ### BackgroundSlider
 
