@@ -9,7 +9,7 @@ const products = [
         id: "2",
         title: 'Auriculares Inalámbricos',
         description: 'Auriculares de alta calidad con cancelación de ruido y sonido envolvente.',
-        imageUrl: 'https://elrincondechina.com/wp-content/uploads/2020/11/Red-Magic-CyberPods-TWS-2-erdc.jpg'
+        imageUrl: 'https://www.valledelguadalhorce.org/wp-content/uploads/2023/12/Como-conectar-auriculares-inalambricos-1080x675.webp'
     },
 ];
 

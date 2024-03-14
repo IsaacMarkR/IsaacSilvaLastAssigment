@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import products from '../data/products';
 import offers from '../data/offers';
@@ -13,6 +14,9 @@ function ProductCard({ title, description, imageUrl }) {
       <Typography variant="h6">{title}</Typography>
       <img src={imageUrl} alt={title} style={{ maxWidth: '100%', maxHeight: '200px', objectFit: 'cover' }} />
       <Typography variant="body2" style={{ marginTop: '10px' }}>{description}</Typography>
+      <Button variant="contained" color="primary" style={{ marginTop: '20px' }}>
+        Comprar
+      </Button>
     </Paper>
   );
 }
@@ -31,7 +35,7 @@ function ItemListContainer() {
         {itemsToShow.map((item, index) => (
           <Grid item xs={12} sm={6} md={4} key={index} style={{ display: 'flex', justifyContent: 'center' }}>
             <Link to={`/item/${item.id}`} style={{ textDecoration: 'none' }}>
-              <ProductCard title={item.title} description={item.description} imageUrl={item.imageUrl} />
+              <ProductCard title={item.title} description={item.description} imageUrl={item.imageUrl}/>
             </Link>
           </Grid>
         ))}
