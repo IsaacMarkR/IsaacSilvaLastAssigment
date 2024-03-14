@@ -30,8 +30,9 @@ function Navbar() {
           <Link to="/category/ofertas" style={{ textDecoration: 'none', color: 'inherit' }}>
             <Button color="inherit">Ofertas</Button>
           </Link>
-          <Button color="inherit">Carrito</Button>
-          <CartWidget />
+          <Link to="/cart">
+            <CartWidget />
+        </Link>
         </Toolbar>
       </AppBar>
     </ThemeProvider>

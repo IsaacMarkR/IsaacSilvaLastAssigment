@@ -5,6 +5,7 @@ import { Home } from './components/Home';
 import { ItemListContainer } from './components/ItemListContainer';
 import { ItemDetail } from './components/ItemDetail';
 import { BackgroundSlider } from './components/BackgroundSlider';
+import { CartResume } from './components/CartResume';
 
 import backgroundImage1 from './assets/futuristic1.jpg';
 import backgroundImage2 from './assets/futuristic2.jpg';
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
           <Route path="/item/:itemId" element={<ItemDetail />} />
+          <Route path="/cart" element={<CartResume />} />
         </Routes>
       </div>
     </BrowserRouter>
